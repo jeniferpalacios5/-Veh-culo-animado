@@ -1,0 +1,92 @@
+.contenedor{
+    background-image: url(../imagenes/fondo2.jpg);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    background-size: contain;
+  
+}
+.fondoMover{
+    animation: fondo 1s infinite linear;
+}
+
+@keyframes fondo {
+    100%{
+       background-position-x: -1024px;
+    }
+}
+.carro1 {
+    width: 600px;
+    margin-top: 350px;
+}
+.llantaiz {
+    width: 110px;
+    margin-left: -195px;
+    margin-top: 500px;
+}
+.llantaizMover{
+    animation: llanta1 1s linear infinite;
+}
+
+@keyframes llanta1 {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.llantader {
+    width: 110px;
+    margin-left: -557px;
+    margin-top: 500px;
+}
+.llantaderMover{
+    animation: llanta2 1s linear infinite;
+}
+
+@keyframes llanta2 {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.luz1 {
+    width: 600px;
+    margin-left: -130px;
+    margin-top: 235px ;
+   
+}
+.luz1Mover{
+    animation: luz 1s linear infinite; 
+}
+
+@keyframes luz {
+    0%{
+       opacity: 0;
+    }
+    100%{
+    opacity: 0.8;
+    }
+}
+.humo{
+    background: url(../imagenes/humo.png);
+    width: 251.4px;
+    height: 137px;
+    position: absolute;
+    z-index: 1;
+    top:600px ;
+    left: 190px;
+}
+.humoMover{
+    animation: humo 1s steps(5) infinite;  
+}
+
+@keyframes humo{
+    100%{
+    background-position-x: 1257px ;
+    }
+}
+
+.oculto{
+    display: none;
+}
+
